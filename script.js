@@ -567,6 +567,16 @@ jQuery(function ($) {
     $(window).trigger('resize');
 });
 
+jQuery(function($) {
+    "use strict";
+    if (!$('html').hasClass('ie7')) {
+        return;
+    }
+    $('ul.art-vmenu li:not(:first-child),ul.art-vmenu li li li:first-child,ul.art-vmenu>li>ul').each(function () { $(this).append('<div class="art-vmenu-separator"> </div><div class="art-vmenu-separator-bg"> </div>'); });
+});
+
+
+
 var artButtonSetup = (function ($) {
     'use strict';
     return (function (className) {
@@ -1205,52 +1215,36 @@ if (typeof window.resizeData === 'undefined') window.resizeData = {};
 window.resizeData.headerPageWidth = true;
 if (typeof window.defaultResponsiveData === 'undefined') window.defaultResponsiveData = [false, true, true, true, true, ];
 
-resizeData['object0'] = {
+resizeData['object1690211264'] = {
    responsive: [
-                  { left: 0.76, top: 1, visible: true }, 
-                  { left: 0.76, top: 1, visible: true }, 
-                  { left: 0.76, top: 1, visible: true }, 
-                  { left: 0.76, top: 1, visible: true }, 
-                  { left: 0.76, top: 1, visible: true }, 
+                  { left: 1, top: 1, visible: true }, 
+                  { left: 1, top: 1, visible: true }, 
+                  { left: 1, top: 1, visible: true }, 
+                  { left: 1, top: 1, visible: true }, 
+                  { left: 1, top: 1, visible: true }, 
                ],
    area: {
        x: 0,
        y: 0
    },
-   width: 800,
-   height: 600,
+   width: 502,
+   height: 377,
    autoWidth: false};
 
 resizeData['headline'] = {
    responsive: [
-                  { left: 0, top: 0.01, visible: true }, 
-                  { left: 0, top: 0.01, visible: true }, 
-                  { left: 0, top: 0.01, visible: true }, 
-                  { left: 0, top: 0.01, visible: true }, 
-                  { left: 0, top: 0.01, visible: true }, 
+                  { left: -0.12, top: 0.06, visible: true }, 
+                  { left: -0.12, top: 0.06, visible: true }, 
+                  { left: -0.12, top: 0.06, visible: true }, 
+                  { left: -0.12, top: 0.06, visible: true }, 
+                  { left: -0.12, top: 0.06, visible: true }, 
                ],
    area: {
        x: 0,
        y: 0
    },
-   width: 258,
-   height: 48,
-   autoWidth: true};
-
-resizeData['slogan'] = {
-   responsive: [
-                  { left: 0, top: 0.14, visible: true }, 
-                  { left: 0, top: 0.14, visible: true }, 
-                  { left: 0, top: 0.14, visible: true }, 
-                  { left: 0, top: 0.14, visible: true }, 
-                  { left: 0, top: 0.14, visible: true }, 
-               ],
-   area: {
-       x: 0,
-       y: 0
-   },
-   width: 313,
-   height: 18,
+   width: 349,
+   height: 57,
    autoWidth: true};
 
 // used to apply compicated values in style like '!important!

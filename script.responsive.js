@@ -550,6 +550,9 @@ jQuery(window).bind("responsive", function (event, responsiveDesign) {
     responsiveLayoutCell(responsiveDesign);
 });
 
+/*global jQuery, responsiveDesign*/
+
+
 
 
 //setTimeout(function () { $("html").addClass("desktop") }, 0);

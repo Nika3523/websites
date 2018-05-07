@@ -386,7 +386,7 @@
 
 .responsive .art-nav .art-hmenu>li>a
 {
-   border-radius: 5px;
+   border-radius: 4px;
 }
 
 .responsive .art-nav ul.art-hmenu>li>ul>li:first-child:after 
@@ -547,5 +547,9 @@
 .responsive .art-footer-inner
 {
    min-width: 0;
+}
+.responsive .art-footer
+{
+   margin-top: 1%;
 }
 
